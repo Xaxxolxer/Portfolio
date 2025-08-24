@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+   <div class="container nav-container">
+        <h1 class="logo"><img src="images/IMG_5752%20-%20Copy2.PNG"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="inicio" class="hero">
+  <div class="container">
+    <h2> <span>Galeria</span></h2>
+    
+    <p>En esta galería encontrarán una selección de mi visión como diseñador: desde 
+    ilustraciones personales hasta proyectos académicos, cada uno narrando una historia visual única.
+    </p>
+      <p>¡Bienvenidos a mi mundo visual!</p>
+    
+  </div>
+</section>
+
+<section class="projects-page">
+    <div class="container">
+        <div class="projects-grid">
+            <!-- Proyecto 1 -->
+            <div class="project-card" onclick="openModal(0)">
+                <img src="images/Autoretrato_caricatura.png" alt="Proyecto 1">
+                <h3>Autorretrato estilizado</h3>
+                <p>Ilustración personal donde represento mi identidad visual en un estilo caricaturesco.</p>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card" onclick="openModal(1)">
+                <img src="images/que-es-un-disenador.png" alt="Proyecto 2">
+                <h3>Pieza informativa / editorial</h3>
+                <p>Diseño realizado con el propósito de explicar de manera visual y clara el rol del diseñador gráfico.</p>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card" onclick="openModal(2)">
+                <img src="images/Antipublicidad_Dep_Com.png" alt="Proyecto 3">
+                <h3>Cartel anti-publicidad</h3>
+                <p>Este cartel antipublicitario nace del deseo de cuestionar el exceso de publicidad
+                que nos rodea a diario. Este ejercicio se lleva a cabo como parte de la clase 
+                de alfabetización visual, donde exploramos el impacto que la publicidad tiene en nuestras 
+                percepciones y decisiones.</p>
+            </div>
+            
+             <!-- Proyecto 4 -->
+            <div class="project-card" onclick="openModal(4)">
+                <img src="images/FIS-Animaci%C3%B3n-en-los-ochenta-01-01.jpg" alt="Proyecto 5">
+                <h3>Poster Promocional Animación en los ochentas FIS18vo</h3>
+                <p>Este vibrante póster rinde homenaje a la Edad de Oro de la animación ochentera, 
+                celebrado en la 18.ª edición del Festival Internacional de la Imagen y Sonido (FIS). </p>
+            </div>
+            
+            <!-- Proyecto 5 -->
+            <div class="project-card" onclick="openModal(4)">
+                <img src="images/FIS-Una-Mirada-al-pasado-01-01.jpg" alt="Proyecto 5">
+                <h3>Poster Promocional Cine puertorriqueño FIS18vo</h3>
+                <p>Este cartel celebra la riqueza y diversidad del cine puertorriqueño en el marco 
+                de la 18.ª edición del Festival Internacional de la Imagen y Sonido (FIS). </p>
+            </div>
+            <!-- Proyecto 6 -->
+            <div class="project-card" onclick="openModal(3)">
+                <img src="images/Harvest_phantom.png" alt="Proyecto 4">
+                <h3>Revista tipográfica</h3>
+                <p>La Revista Tipográfica “Phantom Harvest” es un espacio editorial dedicado a explorar 
+                el arte de contar historias de terror a través del poder de la tipografía y el diseño gráfico.</p>
+            </div>
+
+            <!-- Proyecto 7 -->
+            <div class="project-card" onclick="openModal(4)">
+                <img src="images/Chango.jpg" alt="Proyecto 5">
+                <h3>Fotografía de naturaleza / vida salvaje</h3>
+                <p>Capturada en su hábitat natural, esta imagen muestra a “Chango”, un pájaro de plumaje 
+                completamente negro que destaca por su mirada atenta y su porte elegante.</p>
+            </div> 
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <button class="nav-button prev" onclick="changeImage(-1)">&#8592;</button>
+        <img id="modalImage" src="" alt="Zoomed Image">
+        <div id="modalText"></div>
+        <button class="nav-button next" onclick="changeImage(1)">&#8594;</button>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Jerry E. Sanchez | Arte, Diseño y Anime. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

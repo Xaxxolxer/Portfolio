@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8" />
+        <title>Title</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="container nav-container">
+        <h1 class="logo"><img src="images/IMG_5752%20-%20Copy2.PNG"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Contáctame</h2>
+        <p>¿Tienes un proyecto en mente o quieres trabajar conmigo? ¡Hablemos!</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <form class="contact-form" action="mailto:tuemail@ejemplo.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Jerry E. Sanchez | Arte, Diseño y Anime. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
